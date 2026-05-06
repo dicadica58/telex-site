@@ -15,38 +15,26 @@ const clients = [
 
 export default function Proof() {
   return (
-    <section className="proof">
+    <section className="proof-section">
       <div className="wrap">
-        <div className="head">
-          <h2>
-            Quem confia <em>na Telex</em>
-          </h2>
-          <p>Construtoras, indústrias, órgãos públicos, varejo e produtoras.</p>
-        </div>
+        <h2>
+          Quem confia <span className="accent">na Telex</span>
+        </h2>
+        <p>Construtoras, indústrias, órgãos públicos, varejo e produtoras.</p>
       </div>
-      <div className="marquee" role="region" aria-label="Clientes da Telex">
-        <div className="track">
-          {clients.map((c, i) => (
-            <Image
-              key={`a${i}`}
-              src={`/clients/${c.file}`}
-              alt={c.name}
-              width={200}
-              height={48}
-              className="marquee-logo"
-              style={{ height: 48, width: "auto" }}
-            />
-          ))}
-          {clients.map((c, i) => (
-            <Image
-              key={`b${i}`}
-              src={`/clients/${c.file}`}
-              alt={c.name}
-              width={200}
-              height={48}
-              className="marquee-logo"
-              style={{ height: 48, width: "auto" }}
-            />
+      <div className="proof-marquee" role="region" aria-label="Clientes da Telex">
+        <div className="proof-track">
+          {[...clients, ...clients].map((client, i) => (
+            <div key={i} className="marquee-item">
+              <Image
+                src={`/clients/${client.file}`}
+                alt={client.name}
+                width={200}
+                height={48}
+                className="logo-img"
+                unoptimized
+              />
+            </div>
           ))}
         </div>
       </div>
