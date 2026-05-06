@@ -180,9 +180,13 @@ img{max-width:100%;display:block}
 .marquee-item:hover{opacity:1}
 .logo-img{height:48px;width:auto;object-fit:contain}
 
+.marquee-item-featured{height:72px}
+.marquee-item-featured .logo-img{height:72px !important}
+
 @media (max-width:768px){
   .marquee-item,.logo-img{height:36px}
   .proof-track{gap:40px;animation-duration:60s}
+  .marquee-item-featured,.marquee-item-featured .logo-img{height:54px !important}
 }
 @media (prefers-reduced-motion:reduce){.proof-track{animation:none}}
 section.block{padding:96px 0;border-bottom:1px solid var(--rule)}

@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const clients = [
-  { name: "Polícia Militar de São Paulo", file: "pmsp.png" },
+  { name: "Polícia Militar de São Paulo", file: "pmsp.png", featured: true },
   { name: "SENAI", file: "senai.png" },
   { name: "Direcional Engenharia", file: "direcional.png" },
   { name: "SANY", file: "sany.png" },
@@ -10,7 +10,7 @@ const clients = [
   { name: "Polêmica Construtora", file: "polemica.png" },
   { name: "World Trade Center", file: "wtc.png" },
   { name: "Orçafascio", file: "orcafascio.png" },
-  { name: "Podpah", file: "podpah.png" },
+  { name: "Podpah", file: "podpah.png", featured: true },
 ];
 
 export default function Proof() {
@@ -25,7 +25,7 @@ export default function Proof() {
       <div className="proof-marquee" role="region" aria-label="Clientes da Telex">
         <div className="proof-track">
           {[...clients, ...clients].map((client, i) => (
-            <div key={i} className="marquee-item">
+            <div key={i} className={`marquee-item${client.featured ? " marquee-item-featured" : ""}`}>
               <Image
                 src={`/clients/${client.file}`}
                 alt={client.name}
