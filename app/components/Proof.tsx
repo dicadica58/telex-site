@@ -9,7 +9,6 @@ const clients = [
   { name: "Rottas Construtora", file: "rottas.png" },
   { name: "Polêmica Construtora", file: "polemica.png" },
   { name: "World Trade Center", file: "wtc.png" },
-  { name: "Orçafascio", file: "orcafascio.png" },
   { name: "Podpah", file: "podpah.png", featured: true },
 ];
 
