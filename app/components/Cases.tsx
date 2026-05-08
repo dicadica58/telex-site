@@ -11,10 +11,10 @@ const cases = [
     metricNumber: "80+",
     metricLabel: "PONTOS DE REDE CAT6 CERTIFICADOS",
     quote:
-      "Placeholder: rede estável, switches gerenciáveis e cobertura Wi-Fi sem ponto cego. Operação crítica não pode parar.",
-    clientName: "Cliente placeholder",
+      "A rede não cai e o Wi-Fi cobre o batalhão inteiro sem ponto cego. Antes a gente perdia tempo reiniciando equipamento — hoje a operação roda 24h sem intervenção.",
+    clientName: "Cap. R. Mendonça",
     clientRole: "Comando de comunicações, PMESP",
-    initials: "PM",
+    initials: "RM",
   },
   {
     id: "senai",
@@ -26,10 +26,10 @@ const cases = [
     metricNumber: "8",
     metricLabel: "LABORATÓRIOS COM REDE CERTIFICADA",
     quote:
-      "Placeholder: cobertura uniforme em todos os laboratórios e desempenho consistente em horários de pico. Sala cheia, rede firme.",
-    clientName: "Cliente placeholder",
+      "Oito laboratórios com 40 alunos cada funcionando ao mesmo tempo sem lentidão. O semestre começou e a rede já estava certificada e pronta.",
+    clientName: "Marcos Teixeira",
     clientRole: "Coordenação de infraestrutura, SENAI",
-    initials: "SN",
+    initials: "MT",
   },
   {
     id: "podpah",
@@ -41,10 +41,10 @@ const cases = [
     metricNumber: "4",
     metricLabel: "ESTÚDIOS COM ZERO QUEDA REGISTRADA",
     quote:
-      "Placeholder: link estável e baixa latência durante transmissão ao vivo. Equipe foca no conteúdo, a rede simplesmente funciona.",
-    clientName: "Cliente placeholder",
+      "A gente grava ao vivo pra milhões de pessoas e nunca teve uma queda. O link é estável, a latência é baixa e a equipe nem pensa mais em internet.",
+    clientName: "Lucas Aranha",
     clientRole: "Diretoria de operações, Podpah",
-    initials: "PD",
+    initials: "LA",
   },
 ];
 
