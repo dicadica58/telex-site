@@ -6,11 +6,11 @@ export default function Aluguel() {
       <div className="wrap">
         <div className="block-head">
           <h2>
-            Precisa de infraestrutura agora e <em>só por enquanto</em>?
+            Infraestrutura completa <em>sem comprar equipamento</em>.
           </h2>
           <p className="sub">
-            Câmeras, alarmes, sensores e telefonia para locação. Mesmo padrão de instalação, projeto
-            e suporte da Telex, sem precisar comprar equipamento.
+            Câmeras, alarmes, sensores e telefonia por locação. Mesmo padrão de instalação, projeto
+            e suporte da Telex — do contrato curto ao de longo prazo.
           </p>
         </div>
         <div className="rent-cases">
@@ -22,11 +22,11 @@ export default function Aluguel() {
             </div>
             <h4>Obras e canteiros de construção</h4>
             <p>
-              Câmeras, sensores e cerca elétrica temporária para canteiros, depósitos de material e
+              Câmeras, sensores e cerca elétrica para canteiros, depósitos de material e
               estandes de venda. Instalado em 48 horas.
             </p>
             <ul>
-              <li>locação a partir de 30 dias</li>
+              <li>contratos flexíveis sob medida</li>
               <li>monitoramento pelo celular</li>
               <li>desmobilização sem custo</li>
             </ul>
@@ -45,7 +45,7 @@ export default function Aluguel() {
             <ul>
               <li>diária, fim de semana ou semana</li>
               <li>telefonia com ramais para a equipe</li>
-              <li>câmeras temporárias com gravação</li>
+              <li>câmeras de segurança com gravação</li>
             </ul>
           </div>
           <div className="rent-card">
@@ -54,14 +54,14 @@ export default function Aluguel() {
                 <Icon name="building" size={22} />
               </span>
             </div>
-            <h4>Locação comercial e sazonalidade</h4>
+            <h4>Locação comercial contínua</h4>
             <p>
-              Lojas pop-up, escritórios temporários, projetos de 3 a 12 meses, expansões em teste.
-              Mais barato que comprar e a Telex retira no fim do contrato.
+              Lojas, escritórios, filiais e operações de longo prazo. Mais barato que comprar,
+              com manutenção e substituição incluídas no contrato.
             </p>
             <ul>
-              <li>flexível de 3 a 24 meses</li>
-              <li>migração simples para instalação fixa</li>
+              <li>contratos de longo prazo com condições especiais</li>
+              <li>manutenção e troca de equipamento incluídas</li>
               <li>substituição imediata em falha</li>
             </ul>
           </div>
