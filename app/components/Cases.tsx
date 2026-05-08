@@ -27,9 +27,9 @@ const cases = [
     metricLabel: "LABORATÓRIOS COM REDE CERTIFICADA",
     quote:
       "Oito laboratórios com 40 alunos cada funcionando ao mesmo tempo sem lentidão. O semestre começou e a rede já estava certificada e pronta.",
-    clientName: "Marcos Teixeira",
-    clientRole: "Coordenação de infraestrutura, SENAI",
-    initials: "MT",
+    clientName: "Anderson Souza",
+    clientRole: "Diretor, SENAI",
+    initials: "AS",
   },
   {
     id: "podpah",
@@ -39,12 +39,12 @@ const cases = [
     logoAlt: "Podpah",
     title: "Rede de alta performance para gravação e transmissão",
     metricNumber: "4",
-    metricLabel: "ESTÚDIOS COM ZERO QUEDA REGISTRADA",
+    metricLabel: "ESTÚDIOS COM LINK DEDICADO E WI-FI 7",
     quote:
-      "A gente grava ao vivo pra milhões de pessoas e nunca teve uma queda. O link é estável, a latência é baixa e a equipe nem pensa mais em internet.",
-    clientName: "Lucas Aranha",
-    clientRole: "Diretoria de operações, Podpah",
-    initials: "LA",
+      "Desde que a Telex assumiu a rede, a estabilidade mudou de patamar. O link aguenta transmissão ao vivo sem engasgar e a equipe parou de se preocupar com internet.",
+    clientName: "Vertão",
+    clientRole: "Diretor de tecnologia, Podpah",
+    initials: "VT",
   },
 ];
 
