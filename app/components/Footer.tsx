@@ -32,22 +32,26 @@ export default function Footer() {
             </div>
             <div className="col-services">
               <h5>Serviços</h5>
-              <ul>
-                <li><a href="#">Rede de computadores</a></li>
-                <li><a href="#">Internet por fibra</a></li>
-                <li><a href="#">Telefonia digital</a></li>
-                <li><a href="#">Câmeras de monitoramento</a></li>
-                <li><a href="#">Alarmes</a></li>
-                <li><a href="#">Cerca elétrica</a></li>
-                <li><a href="#">Controle de acesso</a></li>
-                <li><a href="#">Interfonia</a></li>
-                <li><a href="#">Vídeo porteiro</a></li>
-                <li>
-                  <a href="#" style={{ color: "oklch(80% 0.08 75)" }}>
-                    Aluguel de equipamentos ↗
-                  </a>
-                </li>
-              </ul>
+              <div className="services-cols">
+                <ul>
+                  <li><a href="#">Rede de computadores</a></li>
+                  <li><a href="#">Internet por fibra</a></li>
+                  <li><a href="#">Telefonia digital</a></li>
+                  <li><a href="#">Câmeras de monitoramento</a></li>
+                  <li><a href="#">Alarmes</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">Cerca elétrica</a></li>
+                  <li><a href="#">Controle de acesso</a></li>
+                  <li><a href="#">Interfonia</a></li>
+                  <li><a href="#">Vídeo porteiro</a></li>
+                  <li>
+                    <a href="#" style={{ color: "oklch(80% 0.08 75)" }}>
+                      Aluguel de equip. ↗
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
             <div>
               <h5>Empresa</h5>
