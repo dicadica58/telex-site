@@ -83,7 +83,7 @@ export default function Footer() {
           </div>
           <div className="bottom">
             <span>© 2026 Telex Telecomunicações. Todos os direitos reservados.</span>
-            <span>Santo André, ABC e Grande SP</span>
+            <span>J L Rodrigues Telecomunicações LTDA – CNPJ 50.805.312/0001-40 – Rua Paranapanema, 317 – Vila Alzira – Santo André/SP</span>
           </div>
         </div>
       </footer>
