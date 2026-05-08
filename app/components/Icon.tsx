@@ -71,6 +71,26 @@ export default function Icon({ name, size = 24, stroke = 1.6 }: IconProps) {
           <path d="M9 12l2 2 4-4" />
         </svg>
       );
+    case "store":
+      return (
+        <svg {...props}>
+          <path d="M3 9l1-5h16l1 5" />
+          <path d="M3 9c0 1.1.9 2 2 2s2-.9 2-2" />
+          <path d="M7 9c0 1.1.9 2 2 2s2-.9 2-2" />
+          <path d="M11 9c0 1.1.9 2 2 2s2-.9 2-2" />
+          <path d="M15 9c0 1.1.9 2 2 2s2-.9 2-2" />
+          <path d="M5 11v10h14V11" />
+          <path d="M10 21v-6h4v6" />
+        </svg>
+      );
+    case "home":
+      return (
+        <svg {...props}>
+          <path d="M3 12l9-8 9 8" />
+          <path d="M5 10v10h14V10" />
+          <path d="M9 20v-6h6v6" />
+        </svg>
+      );
     case "wrench":
       return (
         <svg {...props}>

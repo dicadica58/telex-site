@@ -10,42 +10,42 @@ export default function Aluguel() {
           </h2>
           <p className="sub">
             Câmeras, alarmes, sensores e telefonia por locação. Mesmo padrão de instalação, projeto
-            e suporte da Telex — do contrato curto ao de longo prazo.
+            e suporte da Telex em todos os tipos de contrato.
           </p>
         </div>
         <div className="rent-cases">
           <div className="rent-card">
             <div className="head-row">
               <span className="visual">
-                <Icon name="wrench" size={22} />
+                <Icon name="store" size={22} />
               </span>
             </div>
-            <h4>Obras e canteiros de construção</h4>
+            <h4>Locação comercial</h4>
             <p>
-              Câmeras, sensores e cerca elétrica para canteiros, depósitos de material e
-              estandes de venda. Instalado em 48 horas.
+              Lojas, escritórios, franquias e filiais. Câmeras, alarmes e telefonia instalados
+              sem entrada e sem investimento em equipamento. Manutenção e troca incluídas no contrato.
             </p>
             <ul>
-              <li>contratos flexíveis sob medida</li>
-              <li>monitoramento pelo celular</li>
-              <li>desmobilização sem custo</li>
+              <li>contratos sem fidelidade ou de longo prazo</li>
+              <li>monitoramento 24h pelo celular</li>
+              <li>substituição imediata em caso de falha</li>
             </ul>
           </div>
           <div className="rent-card">
             <div className="head-row">
               <span className="visual">
-                <Icon name="phone" size={22} />
+                <Icon name="home" size={22} />
               </span>
             </div>
-            <h4>Eventos corporativos</h4>
+            <h4>Locação residencial</h4>
             <p>
-              Feiras, congressos, ativações e produções. Infraestrutura completa montada e
-              desmontada por equipe própria.
+              Casas, apartamentos e propriedades de alto padrão. Câmeras, sensores e cerca
+              elétrica com instalação técnica e suporte direto. Sem custo de equipamento, só o serviço.
             </p>
             <ul>
-              <li>diária, fim de semana ou semana</li>
-              <li>telefonia com ramais para a equipe</li>
-              <li>câmeras de segurança com gravação</li>
+              <li>visão das câmeras ao vivo no celular</li>
+              <li>sensor de presença e cerca elétrica integrados</li>
+              <li>suporte com técnico próprio, sem call center</li>
             </ul>
           </div>
           <div className="rent-card">
@@ -54,15 +54,16 @@ export default function Aluguel() {
                 <Icon name="building" size={22} />
               </span>
             </div>
-            <h4>Locação comercial contínua</h4>
+            <h4>Locação para condomínios</h4>
             <p>
-              Lojas, escritórios, filiais e operações de longo prazo. Mais barato que comprar,
-              com manutenção e substituição incluídas no contrato.
+              Portarias, áreas comuns e perímetro completo. CFTV, controle de acesso, interfonia
+              e alarme num único contrato. Equipamento sempre atualizado, sem custo de troca quando
+              a tecnologia muda.
             </p>
             <ul>
-              <li>contratos de longo prazo com condições especiais</li>
-              <li>manutenção e troca de equipamento incluídas</li>
-              <li>substituição imediata em falha</li>
+              <li>portaria remota e controle de acesso</li>
+              <li>CFTV com gravação em nuvem</li>
+              <li>interfonia integrada às unidades</li>
             </ul>
           </div>
         </div>
