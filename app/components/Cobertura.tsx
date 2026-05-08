@@ -1,5 +1,5 @@
 const cities = [
-  ["Santo André", "mesmo dia"],
+  ["Santo André", "24h"],
   ["São Caetano", "24h"],
   ["São Bernardo", "24h"],
   ["Mauá", "24h"],

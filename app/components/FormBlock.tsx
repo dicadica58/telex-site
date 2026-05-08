@@ -9,6 +9,7 @@ export default function FormBlock() {
     seg: false,
     cond: false,
     rent: false,
+    outro: false,
   });
 
   const toggle = (k: keyof typeof services) =>
@@ -64,14 +65,8 @@ export default function FormBlock() {
                 <label>WhatsApp ou telefone</label>
                 <input type="tel" placeholder="(11) 9 0000 0000" />
               </div>
-              <div className="field">
-                <label>
-                  E-mail <span className="opt">opcional</span>
-                </label>
-                <input type="email" placeholder="seu@email.com" />
-              </div>
               <div className="field full">
-                <label>Do que você precisa?</label>
+                <label>Do que você precisa? <span className="opt">opcional</span></label>
                 <div className="chips">
                   <span
                     className="chip"
@@ -101,13 +96,14 @@ export default function FormBlock() {
                   >
                     Aluguel de Equipamentos
                   </span>
+                  <span
+                    className="chip"
+                    data-on={String(services.outro)}
+                    onClick={() => toggle("outro")}
+                  >
+                    Outro
+                  </span>
                 </div>
-              </div>
-              <div className="field full">
-                <label>
-                  Onde será o atendimento? <span className="opt">opcional</span>
-                </label>
-                <input type="text" placeholder="Cidade, bairro ou nome do condomínio" />
               </div>
               <div className="field full">
                 <label>
