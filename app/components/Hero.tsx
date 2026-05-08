@@ -40,7 +40,7 @@ export default function Hero() {
               <span>condomínios</span>
             </div>
             <div>
-              <b>24h útil</b>
+              <b>24h úteis</b>
               <span>SLA atendimento</span>
             </div>
           </div>
