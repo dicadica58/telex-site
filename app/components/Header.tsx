@@ -31,10 +31,26 @@ const serviceLinks = [
   { label: "Comunicação Condominial", href: "/servicos/condominios" },
 ];
 
+const flatServiceRoutes = [
+  "/cftv-empresa",
+  "/cabeamento-estruturado",
+  "/fibra-optica-empresarial",
+  "/manutencao",
+  "/locacao-comercial",
+  "/locacao-condominio",
+  "/locacao-residencial",
+  "/telefonia-em-nuvem",
+  "/alarme-cerca-eletrica",
+  "/controle-de-acesso",
+  "/comunicacao-condominio",
+];
+
 export function Header() {
   const pathname = usePathname();
-  const isServicos = pathname.startsWith("/servicos");
+  const isServicos = pathname.startsWith("/servicos") || flatServiceRoutes.includes(pathname);
   const [dropOpen, setDropOpen] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const [mobileServicos, setMobileServicos] = useState(false);
   const dropRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -46,6 +62,15 @@ export function Header() {
     document.addEventListener("click", handleClick);
     return () => document.removeEventListener("click", handleClick);
   }, []);
+
+  useEffect(() => {
+    if (mobileOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => { document.body.style.overflow = ""; };
+  }, [mobileOpen]);
 
   return (
     <header className="header">
@@ -105,7 +130,78 @@ export function Header() {
             Pedir orçamento <span className="arr">→</span>
           </a>
         </div>
+        <button
+          className="mobile-toggle"
+          onClick={() => setMobileOpen(true)}
+          aria-label="Abrir menu"
+          type="button"
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="18" x2="21" y2="18" />
+          </svg>
+        </button>
       </div>
+
+      {mobileOpen && (
+        <div className="mobile-menu">
+          <div className="mobile-menu-header">
+            <Link href="/" className="logo-mark" onClick={() => setMobileOpen(false)}>
+              <span className="equals" aria-hidden="true">
+                <span></span>
+                <span></span>
+              </span>
+              <span className="wm">
+                <b>TELEX</b>
+                <small>Telecomunicações</small>
+              </span>
+            </Link>
+            <button
+              className="mobile-menu-close"
+              onClick={() => setMobileOpen(false)}
+              aria-label="Fechar menu"
+              type="button"
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+              </svg>
+            </button>
+          </div>
+          <nav className="mobile-menu-nav">
+            <div>
+              <button
+                className={`mobile-menu-accordion-btn${isServicos ? " nav-active" : ""}`}
+                onClick={() => setMobileServicos((v) => !v)}
+                type="button"
+              >
+                Serviços
+                <span className={`mobile-chevron${mobileServicos ? " open" : ""}`}>+</span>
+              </button>
+              <div className={`mobile-submenu${mobileServicos ? " open" : ""}`}>
+                {serviceLinks.map((s) => (
+                  <Link key={s.href} href={s.href} onClick={() => setMobileOpen(false)}>
+                    {s.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+            <a href="/#aluguel" className="mobile-menu-item" onClick={() => setMobileOpen(false)}>Aluguel</a>
+            <a href="/#cases" className="mobile-menu-item" onClick={() => setMobileOpen(false)}>Cases</a>
+            <a href="/#cobertura" className="mobile-menu-item" onClick={() => setMobileOpen(false)}>Cobertura</a>
+            <a href="/#contato" className="mobile-menu-item" onClick={() => setMobileOpen(false)}>Contato</a>
+          </nav>
+          <div style={{ marginTop: "auto", paddingTop: 24, display: "flex", flexDirection: "column", gap: 10 }}>
+            <a href="https://wa.me/5511998447268" className="btn btn-ghost" style={{ justifyContent: "center" }}>
+              <Icon name="wpp" size={16} /> WhatsApp
+            </a>
+            <a href="/#contato" className="btn btn-primary" style={{ justifyContent: "center" }}>
+              Pedir orçamento <span className="arr">→</span>
+            </a>
+          </div>
+        </div>
+      )}
     </header>
   );
 }

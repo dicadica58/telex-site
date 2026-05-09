@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Icon from "./Icon";
 
 export default function Footer() {
@@ -7,7 +8,7 @@ export default function Footer() {
         <div className="wrap">
           <div className="top">
             <div className="brand">
-              <a href="#" className="logo-mark">
+              <Link href="/" className="logo-mark">
                 <span className="equals" aria-hidden="true">
                   <span></span>
                   <span></span>
@@ -16,7 +17,7 @@ export default function Footer() {
                   <b>TELEX</b>
                   <small>Telecomunicações</small>
                 </span>
-              </a>
+              </Link>
               <p>
                 Telecom, segurança eletrônica e aluguel de equipamentos. Infraestrutura completa
                 para empresas, comércio e condomínios em Santo André, ABC e Grande SP.
@@ -34,21 +35,21 @@ export default function Footer() {
               <h5>Serviços</h5>
               <div className="services-cols">
                 <ul>
-                  <li><a href="#">Rede de computadores</a></li>
-                  <li><a href="#">Internet por fibra</a></li>
-                  <li><a href="#">Telefonia digital</a></li>
-                  <li><a href="#">Câmeras de monitoramento</a></li>
-                  <li><a href="#">Alarmes</a></li>
+                  <li><Link href="/cabeamento-estruturado">Rede de computadores</Link></li>
+                  <li><Link href="/fibra-optica-empresarial">Internet por fibra</Link></li>
+                  <li><Link href="/telefonia-em-nuvem">Telefonia digital</Link></li>
+                  <li><Link href="/cftv-empresa">Câmeras de monitoramento</Link></li>
+                  <li><Link href="/alarme-cerca-eletrica">Alarmes</Link></li>
                 </ul>
                 <ul>
-                  <li><a href="#">Cerca elétrica</a></li>
-                  <li><a href="#">Controle de acesso</a></li>
-                  <li><a href="#">Interfonia</a></li>
-                  <li><a href="#">Vídeo porteiro</a></li>
+                  <li><Link href="/alarme-cerca-eletrica">Cerca elétrica</Link></li>
+                  <li><Link href="/controle-de-acesso">Controle de acesso</Link></li>
+                  <li><Link href="/comunicacao-condominio">Interfonia</Link></li>
+                  <li><Link href="/comunicacao-condominio">Vídeo porteiro</Link></li>
                   <li>
-                    <a href="#" style={{ color: "oklch(80% 0.08 75)" }}>
+                    <Link href="/locacao-comercial" style={{ color: "oklch(80% 0.08 75)" }}>
                       Aluguel de equip. ↗
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -57,8 +58,8 @@ export default function Footer() {
               <h5>Empresa</h5>
               <ul>
                 <li><a href="#">Sobre a Telex</a></li>
-                <li><a href="#">Cases e clientes</a></li>
-                <li><a href="#">Cobertura</a></li>
+                <li><a href="/#cases">Cases e clientes</a></li>
+                <li><a href="/#cobertura">Cobertura</a></li>
                 <li><a href="#">Trabalhe conosco</a></li>
                 <li><a href="#">Política de privacidade</a></li>
               </ul>

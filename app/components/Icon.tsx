@@ -217,6 +217,189 @@ export default function Icon({ name, size = 24, stroke = 1.6 }: IconProps) {
           <path d="M12 18h.01" />
         </svg>
       );
+    case "cloud":
+      return (
+        <svg {...props}>
+          <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" />
+        </svg>
+      );
+    case "eye":
+      return (
+        <svg {...props}>
+          <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+          <circle cx="12" cy="12" r="3" />
+        </svg>
+      );
+    case "checkcircle":
+      return (
+        <svg {...props}>
+          <circle cx="12" cy="12" r="10" />
+          <path d="m9 12 2 2 4-4" />
+        </svg>
+      );
+    case "server":
+      return (
+        <svg {...props}>
+          <rect x="2" y="2" width="20" height="8" rx="2" />
+          <rect x="2" y="14" width="20" height="8" rx="2" />
+          <circle cx="6" cy="6" r="1" fill="currentColor" stroke="none" />
+          <circle cx="6" cy="18" r="1" fill="currentColor" stroke="none" />
+        </svg>
+      );
+    case "filetext":
+      return (
+        <svg {...props}>
+          <path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z" />
+          <path d="M14 3v5h5" />
+          <path d="M16 13H8M16 17H8M10 9H8" />
+        </svg>
+      );
+    case "gauge":
+      return (
+        <svg {...props}>
+          <path d="m12 14 4-4" />
+          <path d="M3.34 19a10 10 0 1 1 17.32 0" />
+        </svg>
+      );
+    case "filesignature":
+      return (
+        <svg {...props}>
+          <path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z" />
+          <path d="M14 3v5h5" />
+          <path d="M12 18.5c-1.5 0-3-.5-3-2s.5-1.5 1-2 1.5-2 1.5-3.5a2 2 0 1 1 4 0c0 1.5 1 2.5 1.5 3s1 1 1 2-.5 2-3 2z" />
+        </svg>
+      );
+    case "shieldcheck":
+      return (
+        <svg {...props}>
+          <path d="M12 3l8 3v6c0 4.5-3.4 8.4-8 9-4.6-.6-8-4.5-8-9V6l8-3z" />
+          <path d="m9 12 2 2 4-4" />
+        </svg>
+      );
+    case "calendarcheck":
+      return (
+        <svg {...props}>
+          <rect x="3" y="4" width="18" height="18" rx="2" />
+          <path d="M16 2v4M8 2v4M3 10h18" />
+          <path d="m9 16 2 2 4-4" />
+        </svg>
+      );
+    case "headphones":
+      return (
+        <svg {...props}>
+          <path d="M3 14h2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H3V14z" />
+          <path d="M21 14h-2a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h2V14z" />
+          <path d="M3 14V10a9 9 0 0 1 18 0v4" />
+        </svg>
+      );
+    case "trendingup":
+      return (
+        <svg {...props}>
+          <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
+          <polyline points="16 7 22 7 22 13" />
+        </svg>
+      );
+    case "refreshcw":
+      return (
+        <svg {...props}>
+          <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8" />
+          <path d="M21 3v5h-5" />
+          <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16" />
+          <path d="M3 21v-5h5" />
+        </svg>
+      );
+    case "package":
+      return (
+        <svg {...props}>
+          <path d="m7.5 4.27 9 5.15" />
+          <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z" />
+          <path d="m3.3 7 8.7 5 8.7-5M12 22V12" />
+        </svg>
+      );
+    case "sparkles":
+      return (
+        <svg {...props}>
+          <path d="m12 3-1.9 5.8a2 2 0 0 1-1.287 1.288L3 12l5.8 1.9a2 2 0 0 1 1.288 1.287L12 21l1.9-5.8a2 2 0 0 1 1.287-1.288L21 12l-5.8-1.9a2 2 0 0 1-1.288-1.287Z" />
+        </svg>
+      );
+    case "piggybank":
+      return (
+        <svg {...props}>
+          <path d="M19 5c-1.5 0-2.8 1.4-3 2-3.5-1.5-11-.3-11 5 0 1.8 0 3 2 4.5V20h4v-2h3v2h4v-4c1-.5 1.7-1 2-2h2v-4h-2c0-1-.5-1.5-1-2" />
+          <path d="M2 9.5a1 1 0 0 1 1-1h.5" />
+          <circle cx="15.5" cy="11" r=".5" fill="currentColor" stroke="none" />
+        </svg>
+      );
+    case "award":
+      return (
+        <svg {...props}>
+          <circle cx="12" cy="8" r="6" />
+          <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" />
+        </svg>
+      );
+    case "messagecircle":
+      return (
+        <svg {...props}>
+          <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+        </svg>
+      );
+    case "radar":
+      return (
+        <svg {...props}>
+          <path d="M19.07 4.93A10 10 0 0 0 6.99 3.34" />
+          <path d="M4 6h.01" />
+          <path d="M2.29 9.62A10 10 0 1 0 21.31 8.35" />
+          <path d="M16.24 7.76A6 6 0 1 0 8.23 16.67" />
+          <path d="M12 18h.01" />
+          <circle cx="12" cy="12" r="2" />
+        </svg>
+      );
+    case "fingerprint":
+      return (
+        <svg {...props}>
+          <path d="M12 10a2 2 0 0 0-2 2c0 1.02-.1 2.51-.26 4" />
+          <path d="M14 13.12c0 2.38 0 6.38-1 8.88" />
+          <path d="M17.29 21.02c.12-.6.43-2.3.5-3.02" />
+          <path d="M2 12a10 10 0 0 1 18-6" />
+          <path d="M2 16h.01" />
+          <path d="M21.8 16c.2-2 .131-5.354 0-6" />
+          <path d="M5 19.5C5.5 18 6 15 6 12a6 6 0 0 1 .34-2" />
+          <path d="M8.65 22c.21-.66.45-1.32.57-2" />
+          <path d="M9 6.8a6 6 0 0 1 9 5.2v2" />
+        </svg>
+      );
+    case "barchart3":
+      return (
+        <svg {...props}>
+          <path d="M3 3v18h18" />
+          <path d="M18 17V9M13 17V5M8 17v-3" />
+        </svg>
+      );
+    case "mic":
+      return (
+        <svg {...props}>
+          <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z" />
+          <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
+          <line x1="12" x2="12" y1="19" y2="22" />
+        </svg>
+      );
+    case "globe":
+      return (
+        <svg {...props}>
+          <circle cx="12" cy="12" r="10" />
+          <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+          <path d="M2 12h20" />
+        </svg>
+      );
+    case "building2":
+      return (
+        <svg {...props}>
+          <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z" />
+          <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2" />
+          <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2" />
+          <path d="M10 6h4M10 10h4M10 14h4M10 18h4" />
+        </svg>
+      );
     default:
       return null;
   }
