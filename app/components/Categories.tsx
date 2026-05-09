@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Icon from "./Icon";
 
 export default function Categories() {
@@ -14,7 +15,7 @@ export default function Categories() {
           </p>
         </div>
         <div className="cats">
-          <div className="cat c1">
+          <Link href="/servicos/telecom" className="cat c1">
             <span className="glyph">
               <Icon name="network" size={24} />
             </span>
@@ -37,8 +38,8 @@ export default function Categories() {
               </li>
             </ul>
             <span className="more">Ver categoria ↗</span>
-          </div>
-          <div className="cat c2">
+          </Link>
+          <Link href="/servicos/seguranca" className="cat c2">
             <span className="glyph">
               <Icon name="shield" size={24} />
             </span>
@@ -65,8 +66,8 @@ export default function Categories() {
               </li>
             </ul>
             <span className="more">Ver categoria ↗</span>
-          </div>
-          <div className="cat c3">
+          </Link>
+          <Link href="/servicos/condominios" className="cat c3">
             <span className="glyph">
               <Icon name="building" size={24} />
             </span>
@@ -89,7 +90,7 @@ export default function Categories() {
               </li>
             </ul>
             <span className="more">Ver categoria ↗</span>
-          </div>
+          </Link>
           <div className="cat c4">
             <span className="new-pill">Novo</span>
             <span className="glyph">

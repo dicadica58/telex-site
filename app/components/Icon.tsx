@@ -145,6 +145,78 @@ export default function Icon({ name, size = 24, stroke = 1.6 }: IconProps) {
           <path d="M5 21h14" />
         </svg>
       );
+    case "camera":
+      return (
+        <svg {...props}>
+          <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+          <circle cx="12" cy="13" r="4" />
+        </svg>
+      );
+    case "bellring":
+      return (
+        <svg {...props}>
+          <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9" />
+          <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" />
+          <path d="M4 2C2.8 3.7 2 5.7 2 8" />
+          <path d="M22 8c0-2.3-.8-4.3-2-6" />
+        </svg>
+      );
+    case "zap":
+      return (
+        <svg {...props}>
+          <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+        </svg>
+      );
+    case "keyround":
+      return (
+        <svg {...props}>
+          <path d="M2 18v3c0 .6.4 1 1 1h4v-3h3v-3h2l1.4-1.4a6.5 6.5 0 1 0-4-4Z" />
+          <circle cx="16.5" cy="7.5" r=".5" fill="currentColor" />
+        </svg>
+      );
+    case "cable":
+      return (
+        <svg {...props}>
+          <path d="M4 9a2 2 0 0 1-2-2V5h6v2a2 2 0 0 1-2 2H4z" />
+          <path d="M3 5V3" />
+          <path d="M7 5V3" />
+          <path d="M19 15a2 2 0 0 0 2-2v-2h-6v2a2 2 0 0 0 2 2h2z" />
+          <path d="M17 21v-2" />
+          <path d="M21 21v-2" />
+          <path d="M5 9v4a4 4 0 0 0 4 4h6" />
+        </svg>
+      );
+    case "wifi":
+      return (
+        <svg {...props}>
+          <path d="M12 20h.01" />
+          <path d="M2 8.82a15 15 0 0 1 20 0" />
+          <path d="M5 12.86a10 10 0 0 1 14 0" />
+          <path d="M8.5 16.93a5 5 0 0 1 7 0" />
+        </svg>
+      );
+    case "phonecall":
+      return (
+        <svg {...props}>
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+          <path d="M14.05 2a9 9 0 0 1 8 7.94" />
+          <path d="M14.05 6A5 5 0 0 1 18 10" />
+        </svg>
+      );
+    case "video":
+      return (
+        <svg {...props}>
+          <path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5" />
+          <rect x="2" y="6" width="14" height="12" rx="2" />
+        </svg>
+      );
+    case "smartphone":
+      return (
+        <svg {...props}>
+          <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
+          <path d="M12 18h.01" />
+        </svg>
+      );
     default:
       return null;
   }
